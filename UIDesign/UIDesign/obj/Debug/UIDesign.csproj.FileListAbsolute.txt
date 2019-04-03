@@ -457,8 +457,6 @@ C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDes
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDesign\UIDesign\bin\Debug\Newtonsoft.Json.dll
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDesign\UIDesign\bin\Debug\Newtonsoft.Json.xml
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.exe.config
-C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.exe
-C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\phantomjs.exe
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\phantomjs-license.txt
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\Config\Config.xml
@@ -548,3 +546,5 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.csproj.GenerateResource.Cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.exe.manifest
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.application
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.exe
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.pdb
