@@ -53,3 +53,21 @@ C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\Src\F
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\Src\Framework.Core\obj\Debug\Framework.Core.csproj.GenerateResource.Cache
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\Src\Framework.Core\obj\Debug\VM.Platform.TestAutomationFramework.Core.dll
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\Src\Framework.Core\obj\Debug\VM.Platform.TestAutomationFramework.Core.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\VM.Platform.TestAutomationFramework.Core.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\VM.Platform.TestAutomationFramework.Core.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\log4net.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\StructureMap.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\StructureMap.Net4.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\VM.Platform.TestAutomationFramework.Extensions.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\VM.Platform.TestAutomationFramework.Extensions.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\log4net.xml
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\StructureMap.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\StructureMap.xml
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\bin\Debug\StructureMap.Net4.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\obj\Debug\Framework.Core.csprojResolveAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\obj\Debug\VM.Platform.TestAutomationFramework.Core.Properties.Resources.resources
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\obj\Debug\Framework.Core.csproj.GenerateResource.Cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\obj\Debug\VM.Platform.TestAutomationFramework.Core.dll
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Core\obj\Debug\VM.Platform.TestAutomationFramework.Core.pdb
