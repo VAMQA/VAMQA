@@ -27,7 +27,7 @@ namespace Framework.SikuliAutomation
                 //element.SendKeys("Nokia");
                 //Thread.Sleep(1000);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }            

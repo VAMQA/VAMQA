@@ -456,7 +456,6 @@ C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDes
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDesign\UIDesign\bin\Debug\Sikuli4Net.dll
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDesign\UIDesign\bin\Debug\Newtonsoft.Json.dll
 C:\Users\VMQApractice\Desktop\v4Dev_Updated\v4Dev_Updated\VMTestAutomation\UIDesign\UIDesign\bin\Debug\Newtonsoft.Json.xml
-C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.exe.config
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\phantomjs.exe
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\phantomjs-license.txt
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\Config\Config.xml
@@ -471,6 +470,7 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\chromedriver.exe
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\geckodriver.exe
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\IEDriverServer.exe
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.exe.config
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.exe.manifest
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.application
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\UIDesign.exe
