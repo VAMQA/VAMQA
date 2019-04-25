@@ -107,14 +107,14 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="_CreateNewNuGetPackage\Config.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\New-NuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\UploadNuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\RunMeToUploadNuGetPackage.cmd" />
+    <None Include="_CreateNewNuGetPackage_Comment\Config.ps1" />
+    <None Include="_CreateNewNuGetPackage_Comment\DoNotModify\CreateNuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage_Comment\DoNotModify\New-NuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage_Comment\DoNotModify\UploadNuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage_Comment\RunMeToUploadNuGetPackage.cmd" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="_CreateNewNuGetPackage\DoNotModify\NuGet.exe" />
+    <None Include="_CreateNewNuGetPackage_Comment\DoNotModify\NuGet.exe" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\packages\PhantomJS.2.0.0\tools\phantomjs\phantomjs.exe">
