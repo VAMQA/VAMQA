@@ -40,7 +40,7 @@ namespace Framework.SikuliAutomation
                 Screen scr = new Screen();
                 scr.Type(Image1, logicalFieldValue);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

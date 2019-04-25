@@ -106,8 +106,11 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\bin\Debug\log4net.xml
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\bin\Debug\StructureMap.Net4.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\bin\Debug\Newtonsoft.Json.xml
-C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\Framework.UIAutomation.csprojResolveAssemblyReference.cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\VM.Platform.TestAutomationFramework.UIAutomation.Properties.Resources.resources
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\Framework.UIAutomation.csproj.GenerateResource.Cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\VM.Platform.TestAutomationFramework.UIAutomation.dll
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\VM.Platform.TestAutomationFramework.UIAutomation.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\bin\Debug\Framework.SikuliAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\Framework.UIAutomation.csprojAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\Framework.UIAutomation.csproj.CoreCompileInputs.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.UIAutomation\obj\Debug\Framework.UIAutomation.csproj.CopyComplete

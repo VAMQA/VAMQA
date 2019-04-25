@@ -238,6 +238,12 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\D
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\StructureMap.Net4.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\Framework.SikuliAutomation.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\Newtonsoft.Json.xml
-C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.csprojResolveAssemblyReference.cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.dll
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\VM.Platform.TestAutomationFramework.Adapters.Local.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\VM.Platform.TestAutomationFramework.Adapters.Selenium.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\VM.Platform.TestAutomationFramework.UIAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\bin\Debug\Framework.SikuliAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.csprojAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.csproj.CoreCompileInputs.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Tests\Framework.Tests\obj\Debug\Framework.Tests.csproj.CopyComplete

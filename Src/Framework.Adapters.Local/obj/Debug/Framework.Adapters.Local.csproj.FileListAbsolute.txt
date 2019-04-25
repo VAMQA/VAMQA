@@ -145,6 +145,10 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Loca
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\bin\Debug\Framework.SikuliAutomation.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\bin\Debug\Newtonsoft.Json.xml
-C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\Framework.Adapters.Local.csprojResolveAssemblyReference.cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\VM.Platform.TestAutomationFramework.Adapters.Local.dll
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\VM.Platform.TestAutomationFramework.Adapters.Local.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\bin\Debug\VM.Platform.TestAutomationFramework.UIAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\bin\Debug\Framework.SikuliAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\Framework.Adapters.Local.csprojAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\Framework.Adapters.Local.csproj.CoreCompileInputs.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Local\obj\Debug\Framework.Adapters.Local.csproj.CopyComplete

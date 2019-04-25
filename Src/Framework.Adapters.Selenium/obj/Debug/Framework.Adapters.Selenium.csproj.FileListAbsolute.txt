@@ -225,6 +225,10 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Sele
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\bin\Debug\WebDriver.Support.xml
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\bin\Debug\log4net.xml
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\bin\Debug\Framework.SikuliAutomation.pdb
-C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\Framework.Adapters.Selenium.csprojResolveAssemblyReference.cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\VM.Platform.TestAutomationFramework.Adapters.Selenium.dll
 C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\VM.Platform.TestAutomationFramework.Adapters.Selenium.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\bin\Debug\VM.Platform.TestAutomationFramework.UIAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\bin\Debug\Framework.SikuliAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\Framework.Adapters.Selenium.csprojAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\Framework.Adapters.Selenium.csproj.CoreCompileInputs.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\Src\Framework.Adapters.Selenium\obj\Debug\Framework.Adapters.Selenium.csproj.CopyComplete

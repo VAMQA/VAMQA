@@ -528,7 +528,6 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\StructureMap.Net4.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\Framework.SikuliAutomation.pdb
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\nunit.framework.xml
-C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.csprojResolveAssemblyReference.cache
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.AddFeature.resources
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.HomePage.resources
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.MassUpdate.resources
@@ -548,3 +547,12 @@ C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.application
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.exe
 C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.pdb
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\VM.WebServices.TestAutomationFramework.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\VM.Platform.TestAutomationFramework.Adapters.Local.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\VM.Platform.TestAutomationFramework.Adapters.Selenium.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\VM.Platform.TestAutomationFramework.UIAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\Framework.Tests.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\bin\Debug\Framework.SikuliAutomation.dll.config
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.csprojAssemblyReference.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.csproj.CoreCompileInputs.cache
+C:\Users\VMQApractice\source\repos\VM TestAutomation\UIDesign\UIDesign\obj\Debug\UIDesign.csproj.CopyComplete
