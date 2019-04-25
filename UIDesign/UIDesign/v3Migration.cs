@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.TeamFoundation.Client;
-using Microsoft.TeamFoundation.TestManagement.Client;
+//using Microsoft.TeamFoundation.TestManagement.Client;
 using VM.Platform.TestAutomationFramework.Core;
 using LinqToExcel;
 using System.Data.SqlClient;
@@ -233,7 +233,7 @@ namespace UIDesign
             #region migration_methods            
             
             btn_connect.Click += new System.EventHandler(btn_connect_Click);
-            btn_migrate.Click += new System.EventHandler(btn_migrate_Click);
+            //btn_migrate.Click += new System.EventHandler(btn_migrate_Click);
 
             #endregion
         }
@@ -241,38 +241,38 @@ namespace UIDesign
         {
 
         }
-        private void btn_migrate_Click(object sender, EventArgs e)
-        {
-            ITestCaseCollection tccoll = null;
-            if((!string.IsNullOrEmpty(txt_teamproj.Text))&(!string.IsNullOrEmpty(txt_testsuiteId.Text)))
-            {
-                try
-                {
-                    ITestManagementService tstMgtService = (ITestManagementService)projColl.GetService(typeof(ITestManagementService));
-                    ITestManagementTeamProject tfsProject = tstMgtService.GetTeamProject(txt_teamproj.Text);
-                    ITestSuiteCollection tstsuite = tfsProject.TestSuites.Query("SELECT * FROM TestSuite where Title = '" + txt_testsuiteId.Text + "'");
-                    List<ITestCaseResultCollection> tcresultColl = new List<ITestCaseResultCollection>();
-                    tccoll = tstsuite[0].AllTestCases;
-                    DialogResult res= MessageBox.Show("Test Suite Name: " + txt_testsuiteId.Text + "\n\n\nTest Cases Count : " +tccoll.Where(x=>x.Title.StartsWith("ATC:")).Count().ToString() + "\n\n\nDo You Want To Migrate ?","Migration",MessageBoxButtons.YesNo);
-                    //tccoll.Count.ToString()
-                    if(DialogResult.Yes==res)
-                    {
-                        txt_teamproj.Enabled = false;
-                        txt_testsuiteId.Enabled = false;
-                        btn_migrate.Enabled = false;                        
-                        startMigration(tccoll);
-                    }                
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("ERROR : " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("ERROR : Please provide Team Project & Test Suite");
-            }
-        }        
+        //private void btn_migrate_Click(object sender, EventArgs e)
+        //{
+        //    ITestCaseCollection tccoll = null;
+        //    if((!string.IsNullOrEmpty(txt_teamproj.Text))&(!string.IsNullOrEmpty(txt_testsuiteId.Text)))
+        //    {
+        //        try
+        //        {
+        //            ITestManagementService tstMgtService = (ITestManagementService)projColl.GetService(typeof(ITestManagementService));
+        //            ITestManagementTeamProject tfsProject = tstMgtService.GetTeamProject(txt_teamproj.Text);
+        //            ITestSuiteCollection tstsuite = tfsProject.TestSuites.Query("SELECT * FROM TestSuite where Title = '" + txt_testsuiteId.Text + "'");
+        //            List<ITestCaseResultCollection> tcresultColl = new List<ITestCaseResultCollection>();
+        //            tccoll = tstsuite[0].AllTestCases;
+        //            DialogResult res= MessageBox.Show("Test Suite Name: " + txt_testsuiteId.Text + "\n\n\nTest Cases Count : " +tccoll.Where(x=>x.Title.StartsWith("ATC:")).Count().ToString() + "\n\n\nDo You Want To Migrate ?","Migration",MessageBoxButtons.YesNo);
+        //            //tccoll.Count.ToString()
+        //            if(DialogResult.Yes==res)
+        //            {
+        //                txt_teamproj.Enabled = false;
+        //                txt_testsuiteId.Enabled = false;
+        //                btn_migrate.Enabled = false;                        
+        //                startMigration(tccoll);
+        //            }                
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            MessageBox.Show("ERROR : " + ex.Message);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("ERROR : Please provide Team Project & Test Suite");
+        //    }
+        //}        
         private void btn_connect_Click(object sender, EventArgs e)
         {
             try
@@ -305,77 +305,77 @@ namespace UIDesign
                 MessageBox.Show("ERROR : "+ex.Message);
             } 
         }
-        private void startMigration(ITestCaseCollection tcColl)
-        {
-            lbl_migrationstatus.Text = "Please Wait.....\n\nMigration is In-Process..";
-           try
-           {
-               if (tcColl != null)
-               {
-                   //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
-                   foreach (ITestCase testcase in tcColl)
-                   {
-                       if ((repositioryFlag) && (testcase.Title.StartsWith("ATC:")))
-                       {
-                           //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
-                           ImportObjectRepositiory(testcase);
-                           repositioryFlag = false;
-                           ImportTestCaseandData(testcase);
-                       }
-                       else if (testcase.Title.StartsWith("ATC:"))
-                       {
-                           //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
-                           ImportTestCaseandData(testcase);
-                       }
-                   }                   
-                   lbl_migrationstatus.Text = "Migration Completed Successfully.";
-                   txt_teamproj.Enabled = true;
-                   txt_testsuiteId.Enabled = true;
-                   btn_migrate.Enabled = true;
-                   //MessageBox.Show("Migration Completed", "Migration");
-                   //this.Close();
-               }
-           }
-           catch(Exception ex)
-           {
-               txt_teamproj.Enabled = true;
-               txt_testsuiteId.Enabled = true;
-               btn_migrate.Enabled = true;
-               lbl_migrationstatus.Text = "Migration Failed. \n\nERROR : "+ex.Message;
-              // MessageBox.Show("Migration Failed.\n\n ERROR : "+ex.Message, "Migration");
-           }
-        }
-        private void ImportObjectRepositiory(ITestCase testcase)
-        {
-            var repositioryStep = (from a in testcase.Actions
-                                 where a is ISharedStepReference
-                                 let s = ((ISharedStepReference)a).FindSharedStep()
-                                 select s).SingleOrDefault();
-            GetSharedStepDto(repositioryStep);
-        }
-        private void GetSharedStepDto(ISharedStep tfsSharedStep)
-        {            
-            if (tfsSharedStep != null)
-            {
-                var sharedStepAction = tfsSharedStep.Actions;
-                ITestStep repStep = (ITestStep)sharedStepAction[0];
-                IEnumerable<ITestAttachment> ORfile = repStep.Attachments;
+        //private void startMigration(ITestCaseCollection tcColl)
+        //{
+        //    lbl_migrationstatus.Text = "Please Wait.....\n\nMigration is In-Process..";
+        //   try
+        //   {
+        //       if (tcColl != null)
+        //       {
+        //           //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
+        //           foreach (ITestCase testcase in tcColl)
+        //           {
+        //               if ((repositioryFlag) && (testcase.Title.StartsWith("ATC:")))
+        //               {
+        //                   //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
+        //                   ImportObjectRepositiory(testcase);
+        //                   repositioryFlag = false;
+        //                   ImportTestCaseandData(testcase);
+        //               }
+        //               else if (testcase.Title.StartsWith("ATC:"))
+        //               {
+        //                   //lbl_migrationstatus.Text = "Please Wait.....Migration is In-Process..";
+        //                   ImportTestCaseandData(testcase);
+        //               }
+        //           }                   
+        //           lbl_migrationstatus.Text = "Migration Completed Successfully.";
+        //           txt_teamproj.Enabled = true;
+        //           txt_testsuiteId.Enabled = true;
+        //           btn_migrate.Enabled = true;
+        //           //MessageBox.Show("Migration Completed", "Migration");
+        //           //this.Close();
+        //       }
+        //   }
+        //   catch(Exception ex)
+        //   {
+        //       txt_teamproj.Enabled = true;
+        //       txt_testsuiteId.Enabled = true;
+        //       btn_migrate.Enabled = true;
+        //       lbl_migrationstatus.Text = "Migration Failed. \n\nERROR : "+ex.Message;
+        //      // MessageBox.Show("Migration Failed.\n\n ERROR : "+ex.Message, "Migration");
+        //   }
+        //}
+        //private void ImportObjectRepositiory(ITestCase testcase)
+        //{
+        //    var repositioryStep = (from a in testcase.Actions
+        //                         where a is ISharedStepReference
+        //                         let s = ((ISharedStepReference)a).FindSharedStep()
+        //                         select s).SingleOrDefault();
+        //    GetSharedStepDto(repositioryStep);
+        //}
+        //private void GetSharedStepDto(ISharedStep tfsSharedStep)
+        //{            
+        //    if (tfsSharedStep != null)
+        //    {
+        //        var sharedStepAction = tfsSharedStep.Actions;
+        //        ITestStep repStep = (ITestStep)sharedStepAction[0];
+        //        IEnumerable<ITestAttachment> ORfile = repStep.Attachments;
 
-                if (ORfile.Count() == 1)
-                {
-                    foreach (var att in ORfile)
-                    {
-                        att.DownloadToFile(".\\MASTEROR_" + tfsSharedStep.Id + ".xlsx");
-                        ImportMasterOR(tfsSharedStep.Id);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Ambigiuty Due to Multiple Attachments. Test Case ID :" + tfsSharedStep.Id, "OR Migration");
-                }
-            }
+        //        if (ORfile.Count() == 1)
+        //        {
+        //            foreach (var att in ORfile)
+        //            {
+        //                att.DownloadToFile(".\\MASTEROR_" + tfsSharedStep.Id + ".xlsx");
+        //                ImportMasterOR(tfsSharedStep.Id);
+        //            }
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Ambigiuty Due to Multiple Attachments. Test Case ID :" + tfsSharedStep.Id, "OR Migration");
+        //        }
+        //    }
 
-        }
+        //}
         private void ImportMasterOR(int testcaseId)
         {
             var xlFile = new ExcelQueryFactory(@".\\MASTEROR_" + Convert.ToString(testcaseId) + ".xlsx");
@@ -409,83 +409,83 @@ namespace UIDesign
             objLib.InsertPageNames(pagetitles);            
             return pagetitles;
         }
-        private void ImportTestCaseandData(ITestCase testcase)
-        {
-            importtestcases(testcase);
-            importtestdata(testcase);
-        }
-        private void importtestcases(ITestCase tc)
-        {
-            objLib.ImportActionflow(tc);        
-        }
-        private void importtestdata(ITestCase tc)
-        {
-            TestActionCollection tstActions = tc.Actions;
-            ITestStep TestDataStep = (ITestStep)tstActions[1];
-            IEnumerable<ITestAttachment> tdAttachment = TestDataStep.Attachments;
+        //private void ImportTestCaseandData(ITestCase testcase)
+        //{
+        //    importtestcases(testcase);
+        //    importtestdata(testcase);
+        //}
+        //private void importtestcases(ITestCase tc)
+        //{
+        //    objLib.ImportActionflow(tc);        
+        //}
+        //private void importtestdata(ITestCase tc)
+        //{
+        //    TestActionCollection tstActions = tc.Actions;
+        //    ITestStep TestDataStep = (ITestStep)tstActions[1];
+        //    IEnumerable<ITestAttachment> tdAttachment = TestDataStep.Attachments;
 
-            if (tdAttachment.Count() == 1)
-            {
-                foreach (var att in tdAttachment)
-                {
-                    att.DownloadToFile(".\\TESTDATA_" + tc.Id + ".xlsx");
-                    ImportData(tc);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Ambigiuty Due to Multiple Attachments. Test Case ID :" + tc.Id, "TestData Migration");
-            }            
-        }
-        private void ImportData(ITestCase testcase)
-        {
-            var xlFile = new ExcelQueryFactory(@".\\TESTDATA_" + testcase.Id + ".xlsx");
-            xlFile.DatabaseEngine = DatabaseEngine.Ace;
-            var sheetnames = xlFile.GetWorksheetNames().ToArray();
-            var directiveMap = new Dictionary<string, IEnumerable<TestDataDirective>>();
-            foreach (var sheetname in sheetnames)
-            {
-                var rows = from a in xlFile.Worksheet(sheetname) select a;
-                var xlcolnames = xlFile.GetColumnNames(sheetname).ToArray();
-                var directives = new List<TestDataDirective>();
-                foreach (var row in rows)
-                {
-                    var directive = new TestDataDirective();
-                    foreach (var key in row.ColumnNames.Where(IsImportantColumn))
-                    {
-                        if (string.IsNullOrWhiteSpace(row[key])) continue;
-                        switch (key.Replace(" ", string.Empty).ToLower())
-                        {
-                            case "execute":
-                                directive.ShouldExecute = IsPositive(row[key]);
-                                break;
-                            case "tc#":
-                            case "tc #":
-                                directive.TestCaseNumber = row[key];
-                                break;
-                            case "flowidentifier":
-                                directive.FlowIdentifier = int.Parse(row[key]);
-                                break;
-                            case "dataidentifier":
-                                directive.DataIdentifier = int.Parse(row[key]);
-                                break;
-                            case "indicator":
-                                directive.Indicator = row[key];
-                                break;
-                            default:
-                                directive.Interactions.Add(new TestDataInteraction { LogicalFieldName = key, Value = row[key] });
-                                break;
-                        }
-                    }
-                    directives.Add(directive);
-                }
-                directiveMap.Add(sheetname.ToLower(), directives);
-            }
-            var tcdirective = objLib.GetTestCaseDirective();
-            if (File.Exists(@".\\TESTDATA_" + testcase.Id + ".xlsx"))
-                File.Delete(@".\\TESTDATA_" + testcase.Id + ".xlsx");
-            objLib.InsertTestData(tcdirective, directiveMap, testcase.Id);            
-        }
+        //    if (tdAttachment.Count() == 1)
+        //    {
+        //        foreach (var att in tdAttachment)
+        //        {
+        //            att.DownloadToFile(".\\TESTDATA_" + tc.Id + ".xlsx");
+        //            ImportData(tc);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Ambigiuty Due to Multiple Attachments. Test Case ID :" + tc.Id, "TestData Migration");
+        //    }            
+        //}
+        //private void ImportData(ITestCase testcase)
+        //{
+        //    var xlFile = new ExcelQueryFactory(@".\\TESTDATA_" + testcase.Id + ".xlsx");
+        //    xlFile.DatabaseEngine = DatabaseEngine.Ace;
+        //    var sheetnames = xlFile.GetWorksheetNames().ToArray();
+        //    var directiveMap = new Dictionary<string, IEnumerable<TestDataDirective>>();
+        //    foreach (var sheetname in sheetnames)
+        //    {
+        //        var rows = from a in xlFile.Worksheet(sheetname) select a;
+        //        var xlcolnames = xlFile.GetColumnNames(sheetname).ToArray();
+        //        var directives = new List<TestDataDirective>();
+        //        foreach (var row in rows)
+        //        {
+        //            var directive = new TestDataDirective();
+        //            foreach (var key in row.ColumnNames.Where(IsImportantColumn))
+        //            {
+        //                if (string.IsNullOrWhiteSpace(row[key])) continue;
+        //                switch (key.Replace(" ", string.Empty).ToLower())
+        //                {
+        //                    case "execute":
+        //                        directive.ShouldExecute = IsPositive(row[key]);
+        //                        break;
+        //                    case "tc#":
+        //                    case "tc #":
+        //                        directive.TestCaseNumber = row[key];
+        //                        break;
+        //                    case "flowidentifier":
+        //                        directive.FlowIdentifier = int.Parse(row[key]);
+        //                        break;
+        //                    case "dataidentifier":
+        //                        directive.DataIdentifier = int.Parse(row[key]);
+        //                        break;
+        //                    case "indicator":
+        //                        directive.Indicator = row[key];
+        //                        break;
+        //                    default:
+        //                        directive.Interactions.Add(new TestDataInteraction { LogicalFieldName = key, Value = row[key] });
+        //                        break;
+        //                }
+        //            }
+        //            directives.Add(directive);
+        //        }
+        //        directiveMap.Add(sheetname.ToLower(), directives);
+        //    }
+        //    var tcdirective = objLib.GetTestCaseDirective();
+        //    if (File.Exists(@".\\TESTDATA_" + testcase.Id + ".xlsx"))
+        //        File.Delete(@".\\TESTDATA_" + testcase.Id + ".xlsx");
+        //    objLib.InsertTestData(tcdirective, directiveMap, testcase.Id);            
+        //}
         private bool IsPositive(Cell cell)
         {
             return string.IsNullOrWhiteSpace(cell.Value.ToString())
