@@ -23,9 +23,6 @@ namespace Framework.SikuliAutomation
                 Screen scr = new Screen();
                 scr.Click(Image1, true);
 
-                //IWebElement element = driver.FindElement(By.XPath("//*[@id='twotabsearchtextbox']"));
-                //element.SendKeys("Nokia");
-                //Thread.Sleep(1000);
             }
             catch (Exception ex)
             {
