@@ -159,12 +159,12 @@
     <Error Condition="!Exists('..\..\packages\Selenium.Firefox.WebDriver.0.17.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Selenium.Firefox.WebDriver.0.17.0\build\Selenium.Firefox.WebDriver.targets'))" />
     <Error Condition="!Exists('..\..\packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets'))" />
   </Target>
-  <PropertyGroup>
-    <PostBuildEvent>REM Create a NuGet package for this project and place the .nupkg file in the project's output directory.
-REM If you see this in Visual Studio's Error List window, check the Output window's Build tab for the actual error.
-ECHO Creating NuGet package in Post-Build event...
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(ProjectDir)_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1' -ProjectFilePath '$(ProjectPath)' -OutputDirectory '$(TargetDir)' -BuildConfiguration '$(ConfigurationName)' -BuildPlatform '$(PlatformName)'"</PostBuildEvent>
-  </PropertyGroup>
+  <!-- <PropertyGroup> -->
+    <!-- <PostBuildEvent>REM Create a NuGet package for this project and place the .nupkg file in the project's output directory. -->
+<!-- REM If you see this in Visual Studio's Error List window, check the Output window's Build tab for the actual error. -->
+<!-- ECHO Creating NuGet package in Post-Build event... -->
+<!-- PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(ProjectDir)_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1' -ProjectFilePath '$(ProjectPath)' -OutputDirectory '$(TargetDir)' -BuildConfiguration '$(ConfigurationName)' -BuildPlatform '$(PlatformName)'"</PostBuildEvent> -->
+  <!-- </PropertyGroup> -->
   <Import Project="..\..\packages\Selenium.WebDriver.FirefoxDriver.0.11.1\build\Selenium.WebDriver.FirefoxDriver.targets" Condition="Exists('..\..\packages\Selenium.WebDriver.FirefoxDriver.0.11.1\build\Selenium.WebDriver.FirefoxDriver.targets')" />
   <Import Project="..\..\packages\Selenium.WebDriver.ChromeDriver.2.29.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\..\packages\Selenium.WebDriver.ChromeDriver.2.29.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <Import Project="..\..\packages\Selenium.WebDriver.IEDriver.3.4.0\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\..\packages\Selenium.WebDriver.IEDriver.3.4.0\build\Selenium.WebDriver.IEDriver.targets')" />
