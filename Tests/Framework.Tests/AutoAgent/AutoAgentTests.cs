@@ -6,7 +6,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using NUnit.Framework;
 
-    //[TestClass]
+    [TestClass]
     public class AutoAgentTests
     {
 

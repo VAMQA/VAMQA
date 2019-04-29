@@ -12,7 +12,7 @@
 
 
 
-    //[TestClass]
+    [TestClass]
     public class AutoCustomerTests
     {
         private static TestAutomation testAutomation;
@@ -57,14 +57,14 @@
         public static void ClassCleanup()
         {
            testAutomation.TestRunCleanup();
-        }        
+        }
 
-        //[TestMethod]
-        //public void Execute(int id, string strEnv, TestAutomation test, int Retry)
-        //{
-        //    var testRunContext = test.Execute(id, Retry, strEnv);
-        //    Report(testRunContext);
-        //}            
+        [TestMethod]
+        public void Execute(int id, string strEnv, TestAutomation test, int Retry)
+        {
+            var testRunContext = test.Execute(id, Retry, strEnv);
+            Report(testRunContext);
+        }
 
         public class ConsolidatedTestResults
         {

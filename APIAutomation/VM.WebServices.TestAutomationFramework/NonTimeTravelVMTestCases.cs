@@ -9,7 +9,7 @@ namespace VM.WebServices.TestAutomationFramework
     /// <summary>
     /// Summary description for NonTimeTravelVMTestCases
     /// </summary>
-    //[TestClass]
+    [TestClass]
     //[DeploymentItem(@".\TestCases", @".\Testcases")]
     public class NonTimeTravelVMTestCases
     {
@@ -38,16 +38,16 @@ namespace VM.WebServices.TestAutomationFramework
             }
         }
 
-        //[TestMethod]
-        //public void NonTimeTravelVMTestCases_AddfunctioninNACHAdatabase_349056()
-        //{
-        //    WebServicesFrameworkDriver.FrameworkDriver("349056", ConfigurationManager.AppSettings["Environment"].ToString().Trim(), Constants.Scrum.PaymentsVM);
-        //}
-        //[TestMethod]
-        //public void NonTimeTravelVMTestCases_EditfunctioninNACHAdatabase_349063()
-        //{
-        //    WebServicesFrameworkDriver.FrameworkDriver("349063", ConfigurationManager.AppSettings["Environment"].ToString().Trim(), Constants.Scrum.PaymentsVM);
-        //}
+        [TestMethod]
+        public void NonTimeTravelVMTestCases_AddfunctioninNACHAdatabase_349056()
+        {
+            WebServicesFrameworkDriver.FrameworkDriver("349056", ConfigurationManager.AppSettings["Environment"].ToString().Trim(), Constants.Scrum.PaymentsVM);
+        }
+        [TestMethod]
+        public void NonTimeTravelVMTestCases_EditfunctioninNACHAdatabase_349063()
+        {
+            WebServicesFrameworkDriver.FrameworkDriver("349063", ConfigurationManager.AppSettings["Environment"].ToString().Trim(), Constants.Scrum.PaymentsVM);
+        }
 
     }
 }

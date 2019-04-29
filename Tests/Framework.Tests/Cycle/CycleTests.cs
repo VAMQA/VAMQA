@@ -8,7 +8,7 @@
     /// <summary>
     /// Summary description for CounselorTests
     /// </summary>
-    //[TestClass]
+    [TestClass]
     public class CycleTests
     {
         private static TestAutomation testAutomation;
@@ -31,12 +31,12 @@
             }
         }
 
-        //[TestMethod]
-        //[TestCategory("endtoend")]
-        //public void Cycle_488424()
-        //{
-        //    //testAutomation.Execute(488424, "CNBNLF_USER");
-        //}
+        [TestMethod]
+        [TestCategory("endtoend")]
+        public void Cycle_488424()
+        {
+            //testAutomation.Execute(488424, "CNBNLF_USER");
+        }
 
 
     }
