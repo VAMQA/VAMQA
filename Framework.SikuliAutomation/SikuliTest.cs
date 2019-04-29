@@ -22,7 +22,7 @@ namespace Framework.SikuliAutomation
 
                 Screen scr = new Screen();
                 scr.Click(Image1, true);
-                //
+                
             }
             catch (Exception ex)
             {
