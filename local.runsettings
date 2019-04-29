@@ -3,7 +3,7 @@
 
   <!-- MSTest adapter -->
   <MSTest>
-    <DeploymentEnabled>False</DeploymentEnabled>
+    <DeploymentEnabled>True</DeploymentEnabled>
   </MSTest>
 
 
