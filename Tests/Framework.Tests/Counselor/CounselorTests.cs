@@ -7,7 +7,7 @@
     /// <summary>
     /// Summary description for CounselorTests
     /// </summary>
-    [TestClass]
+    //[TestClass]
     public class CounselorTests
     {
         private static TestAutomation testAutomation;
@@ -36,45 +36,45 @@
             testAutomation.TestRunCleanup();
         }
 
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Counselor_446266()
-        {
-            //testAutomation.Execute(446266, "COUNSELOR_DEV");
-        }
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Counselor_446266()
+        //{
+        //    //testAutomation.Execute(446266, "COUNSELOR_DEV");
+        //}
 
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Counselor_485626()
-        {
-            //testAutomation.Execute(309300, "COUNSELOR_USER");
-        }
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Counselor_485626()
+        //{
+        //    //testAutomation.Execute(309300, "COUNSELOR_USER");
+        //}
 
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Counselor_486508()
-        {
-            //testAutomation.Execute(486508, "COUNSELOR_USER");
-        }
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Counselor_486508()
+        //{
+        //    //testAutomation.Execute(486508, "COUNSELOR_USER");
+        //}
 
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Cycle_452902()
-        {
-            //testAutomation.Execute(452902, "COUNSELOR_DEV");
-        }
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Cycle_452902()
+        //{
+        //    //testAutomation.Execute(452902, "COUNSELOR_DEV");
+        //}
 
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Cycle_485623()
-        {
-           // testAutomation.Execute(485623, "COUNSELOR_DEV");
-        }
-        [TestMethod]
-        [TestCategory("endtoend")]
-        public void Cycle_486578()
-        {
-            //testAutomation.Execute(486578, "COUNSELOR_SI");
-        }
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Cycle_485623()
+        //{
+        //   // testAutomation.Execute(485623, "COUNSELOR_DEV");
+        //}
+        //[TestMethod]
+        //[TestCategory("endtoend")]
+        //public void Cycle_486578()
+        //{
+        //    //testAutomation.Execute(486578, "COUNSELOR_SI");
+        //}
     }
 }
